@@ -1,0 +1,82 @@
+*,*::after,*::before{
+	box-sizing: border-box;
+}
+
+body , h1, h2{
+	margin: 0;
+}
+
+/**
+ * 		stickyFooter
+ */
+
+header, footer{
+	background-color: black;
+	color: white;
+	padding: 20px;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;	
+}
+
+header,footer{
+}
+
+main{
+	width: 100%;
+	flex-grow: 1;
+}
+
+
+/**
+ * 		stickyFooter
+ */
+
+
+/* para el header como menu*/
+header ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;	
+}
+
+header ul li {
+	padding: 10px;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (max-width: 540px) {
+  header, ul{
+  	flex-direction: column;
+  	align-items: center;
+  }
+}
+
+
+/*hero image*/
+.hero-image{
+	background-image: url(../images/arbol.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+}
+
+.hero-image div{
+	color: white;
+	width: inherit;
+	height: inherit;
+	font-size: 5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}

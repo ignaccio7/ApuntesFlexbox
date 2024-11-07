@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Practico 2</title>
+	<style type="text/css">
+		*,*::after,*::before{
+			box-sizing: border-box;
+		}
+		.container{
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+		}
+		.flex-item{
+			flex: 0 0 50%;
+			padding: 20px;
+		}
+
+		.order-1{
+			order: -1;
+		}
+
+		@media (max-width: 750px) {
+			.flex-item{
+				flex: 0 0 100%;
+			}
+			.order-1{
+				order: 0;
+			}
+		}
+
+
+		/*Responsive sin media query**/
+
+		.flex-responsive{
+			display: flex;
+			flex-flow: row wrap;
+		}
+
+		.flex-responsive-item{
+			border: thin solid #f60;
+			flex: 1 1 250px;
+
+		}
+
+	</style>
+</head>
+<body>
+	<h2>Probando el order</h2>
+	<section class="container">
+		<div class="flex-item">
+			<h1>Titulo </h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+		<div class="flex-item">
+			<img src="../images/arbol.jpg" width="100%" height="auto">
+		</div>
+	</section>
+
+	<section class="container">
+		<div class="flex-item">
+			<h1>Titulo </h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+		<div class="flex-item order-1">
+			<img src="../images/arbol.jpg" width="100%" height="auto">
+		</div>
+	</section>
+
+
+	<h2>Responsive sin media query</h2>
+
+	<div class="flex-responsive">
+		<div class="flex-responsive-item">Item 1</div>
+		<div class="flex-responsive-item">Item 2</div>
+		<div class="flex-responsive-item">Item 3</div>
+		<div class="flex-responsive-item">Item 4</div>
+		<div class="flex-responsive-item">Item 5</div>
+		<div class="flex-responsive-item">Item 6</div>
+		<div class="flex-responsive-item">Item 7</div>
+		<div class="flex-responsive-item">Item 8</div>
+		<div class="flex-responsive-item">Item 9</div>
+		<div class="flex-responsive-item">Item 10</div>
+		<div class="flex-responsive-item">Item 11</div>
+		<div class="flex-responsive-item">Item 12</div>
+		<div class="flex-responsive-item">Item 13</div>
+		<div class="flex-responsive-item">Item 14</div>
+		<div class="flex-responsive-item">Item 15</div>
+		<div class="flex-responsive-item">Item 16</div>
+		<div class="flex-responsive-item">Item 17</div>
+		<div class="flex-responsive-item">Item 18</div>
+		<div class="flex-responsive-item">Item 19</div>
+		<div class="flex-responsive-item">Item 20</div>
+		<div class="flex-responsive-item">Item 21</div>
+		<div class="flex-responsive-item">Item 22</div>
+		<div class="flex-responsive-item">Item 23</div>
+	</div>
+
+
+</body>
+</html>
